@@ -30,9 +30,4 @@ public class PersonajeEntity extends PeliserieEntity {
     @ManyToMany(mappedBy = "personajes", cascade = CascadeType.ALL)
     private List<PeliserieEntity> peliserie = new ArrayList<>();
 
-    // Añadir y remover peliculas o series
-    public Void addPeliserie(PersonajeEntity peliserie) { this.peliserie.add(peliserie);}
-
-    public Void removePeliserie(PersonajeEntity peliserie) { this.peliserie.remove(peliserie);}
-
 }

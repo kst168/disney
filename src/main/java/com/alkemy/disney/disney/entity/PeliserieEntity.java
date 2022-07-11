@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "pelicula o serie")
+@Table(name = "peliserie")
 @Getter
 @Setter
 
@@ -41,9 +41,9 @@ public class PeliserieEntity {
             })
     @JoinTable(
             name = "personaje_peliserie", // revisar video
-            JoinColumns = @JoinColumn(name = "peliserie_id"),
+            joinColumns = @JoinColumn(name = "peliserie_id"),
             inverseJoinColumns = @JoinColumn(name = "personaje_id"))
-    private Set<PersonajeEntity> icons = new HashSet<>();
+    private Set<PersonajeEntity> personajes = new HashSet<>();
 
     @Override
     public boolean equals(Object obj) {
