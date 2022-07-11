@@ -1,6 +1,5 @@
 package com.alkemy.disney.disney.entity;
 
-import com.fasterxml.jackson.annotation.JsonTypeId;
 import lombok.Getter;
 import lombok.Setter;
 

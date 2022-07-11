@@ -40,7 +40,7 @@ public class PeliserieEntity {
                     CascadeType.MERGE
             })
     @JoinTable(
-            name = "personaje_peliserie", // revisar video
+            name = "personaje_peliserie",
             joinColumns = @JoinColumn(name = "peliserie_id"),
             inverseJoinColumns = @JoinColumn(name = "personaje_id"))
     private Set<PersonajeEntity> personajes = new HashSet<>();
